@@ -24,6 +24,7 @@ public class Main {
         lista.addLast(1);
         lista.addLast(2);
         lista.addLast(3);
+        lista.addLast(4);
 
 
         lista.show();
