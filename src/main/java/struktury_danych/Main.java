@@ -1,5 +1,6 @@
 package struktury_danych;
 
+import algorytmy.BinarySearch;
 import algorytmy.ONP;
 import struktury_danych.kolejka.KolejkaLista;
 import struktury_danych.lista.Lista;
@@ -15,9 +16,20 @@ public class Main {
        //wywolajStosLista();
         // wywolajKolejkaLista();
         //new ONP().uruchom();
-        wywolajLista();
+        //wywolajLista();
+        wywolajBinarySearch();
 
     }
+    public static void wywolajBinarySearch(){
+        int tab[] = new int [20];
+        for (int i = 0; i < tab.length; i++) {
+            tab[i]=i;
+        }
+        BinarySearch binarySearch = new BinarySearch();
+        binarySearch.find(tab, 35);
+    }
+
+
     public static void wywolajLista(){
         Lista lista = new Lista();
 
