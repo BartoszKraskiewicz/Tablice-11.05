@@ -1,6 +1,7 @@
 package struktury_danych;
 
 import algorytmy.BinarySearch;
+import algorytmy.NWD;
 import algorytmy.ONP;
 import struktury_danych.kolejka.KolejkaLista;
 import struktury_danych.lista.Lista;
@@ -12,25 +13,40 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-       //wywolajStosTablice();
-       //wywolajStosLista();
+        //wywolajStosTablice();
+        //wywolajStosLista();
         // wywolajKolejkaLista();
         //new ONP().uruchom();
         //wywolajLista();
-        wywolajBinarySearch();
+        //wywolajBinarySearch();
+        wywolajNWD();
+    }
+
+    public static void wywolajNWD() {
+        NWD nwd = new NWD();
+        int a = 12244556;
+        int b = 22334;
+
+        int wynik = nwd.odejmowanie(a, b);
+        System.out.println("PRZEZ ODEJMOWANIE - najwiekszy wspólny dzielnik dla liczb " + a + " oraz " + b + " to: " + wynik);
+
+        int wynikDzielenia = nwd.resztaZDzielenia(a, b);
+        System.out.println("PRZEZ RESZTĘ Z DZIELENIA - najwiekszy wspólny dzielnik dla liczb " + a + " oraz " + b + " to: " + wynikDzielenia);
+
 
     }
-    public static void wywolajBinarySearch(){
-        int tab[] = new int [20];
+
+    public static void wywolajBinarySearch() {
+        int tab[] = new int[20];
         for (int i = 0; i < tab.length; i++) {
-            tab[i]=i;
+            tab[i] = i;
         }
         BinarySearch binarySearch = new BinarySearch();
         binarySearch.find(tab, 35);
     }
 
 
-    public static void wywolajLista(){
+    public static void wywolajLista() {
         Lista lista = new Lista();
 
         lista.addLast(1);
@@ -61,7 +77,6 @@ public class Main {
 
 
     }
-
 
 
     public static void wywolajStosTablice() {
@@ -123,7 +138,7 @@ public class Main {
 
     }
 
-    public static void wywolajStosLista(){
+    public static void wywolajStosLista() {
         StosLista stosLista = new StosLista();
 
         stosLista.push(1);
@@ -150,12 +165,13 @@ public class Main {
             stosLista.pop();
             stosLista.pop();
             stosLista.pop();
-        }catch(StosPustyException e){
+        } catch (StosPustyException e) {
             System.out.println(e.getMessage());
         }
 
     }
-    public static void wywolajKolejkaLista(){
+
+    public static void wywolajKolejkaLista() {
         KolejkaLista kolejkaLista = new KolejkaLista();
 
         kolejkaLista.add(1);
