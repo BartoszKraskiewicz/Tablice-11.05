@@ -19,7 +19,15 @@ public class Main {
         //wywolajBinarySearch();
         //wywolajNWD();
         //wywolajNWW();
-        wywolajLiczbyPierwsze();
+        //wywolajLiczbyPierwsze();
+        wywolajSilnie();
+
+    }
+
+    public static void wywolajSilnie(){
+        Silnia silnia = new Silnia();
+        int wynik = silnia.rekurencyjnie(5);
+        System.out.println("Wynik silni: " + wynik);
     }
 
     public static void wywolajLiczbyPierwsze(){
