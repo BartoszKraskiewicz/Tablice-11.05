@@ -2,6 +2,7 @@ package struktury_danych;
 
 import algorytmy.BinarySearch;
 import algorytmy.NWD;
+import algorytmy.NWW;
 import algorytmy.ONP;
 import struktury_danych.kolejka.KolejkaLista;
 import struktury_danych.lista.Lista;
@@ -19,7 +20,16 @@ public class Main {
         //new ONP().uruchom();
         //wywolajLista();
         //wywolajBinarySearch();
-        wywolajNWD();
+        //wywolajNWD();
+        wywolajNWW();
+    }
+
+    public static void wywolajNWW(){
+        int a = 12244556;
+        int b = 22334;
+        int wynik = NWW.oblicz(a, b);
+        System.out.println("Wynik NWW: " + wynik);
+
     }
 
     public static void wywolajNWD() {

@@ -14,7 +14,7 @@ public class NWD { // implementacja algorytmu Euklidesa
         return a;
     }
 
-    public int resztaZDzielenia(int a, int b) {
+    static public int resztaZDzielenia(int a, int b) {
 
         while (b != 0) {
             int r = a % b;
