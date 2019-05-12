@@ -20,14 +20,16 @@ public class LiczbyPierwsze {// sito Eratostenesa
                     sito[j] = false;
                 }
             }
-
         }
         for (int i = 0; i < rozmiar; i++) {
             System.out.println(i + ": " + sito[i]);
-
         }
-
     }
+
+    public boolean czyPierwszaPrzezSito(int liczba){
+        return sito[liczba];
+    }
+
 
 }
 

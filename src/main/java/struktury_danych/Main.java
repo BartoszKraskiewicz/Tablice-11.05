@@ -23,9 +23,14 @@ public class Main {
     }
 
     public static void wywolajLiczbyPierwsze(){
-        int rozmiar = 100;
+        int rozmiar = 1200;
         LiczbyPierwsze liczbyPierwsze = new LiczbyPierwsze();
         liczbyPierwsze.utworzSito(rozmiar);
+
+        System.out.println(liczbyPierwsze.czyPierwszaPrzezSito(5));
+        System.out.println(liczbyPierwsze.czyPierwszaPrzezSito(111));
+        System.out.println(liczbyPierwsze.czyPierwszaPrzezSito(148));
+        System.out.println(liczbyPierwsze.czyPierwszaPrzezSito(997));
     }
 
     public static void wywolajNWW(){
