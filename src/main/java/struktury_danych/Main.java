@@ -1,9 +1,6 @@
 package struktury_danych;
 
-import algorytmy.BinarySearch;
-import algorytmy.NWD;
-import algorytmy.NWW;
-import algorytmy.ONP;
+import algorytmy.*;
 import struktury_danych.kolejka.KolejkaLista;
 import struktury_danych.lista.Lista;
 import struktury_danych.stos.StosLista;
@@ -21,7 +18,14 @@ public class Main {
         //wywolajLista();
         //wywolajBinarySearch();
         //wywolajNWD();
-        wywolajNWW();
+        //wywolajNWW();
+        wywolajLiczbyPierwsze();
+    }
+
+    public static void wywolajLiczbyPierwsze(){
+        int rozmiar = 100;
+        LiczbyPierwsze liczbyPierwsze = new LiczbyPierwsze();
+        liczbyPierwsze.utworzSito(rozmiar);
     }
 
     public static void wywolajNWW(){
